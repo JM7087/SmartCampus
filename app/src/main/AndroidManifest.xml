@@ -24,7 +24,7 @@
         <activity android:name=".lixeira" />
         <activity android:name=".multimidia" />
         <activity android:name=".arCondicionado" />
-        <activity android:name=".menu"></activity>
+        <activity android:name=".menu" />
     </application>
 
 </manifest>
