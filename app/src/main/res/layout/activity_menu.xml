@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.jm7087.smartcampus.menu">
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textColor="@android:color/background_dark"
+        android:textSize="50sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+    <Button
+        android:text="Ar Condicionado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMenuArCondicionado"
+        android:textSize="30sp"
+        android:onClick="IrParaArCondicionado"
+        android:layout_below="@+id/textViewMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:id="@+id/buttonMenuProjetorCortina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="IrParaMultimidia"
+        android:text="Projetor/Persiana"
+        android:textSize="30sp"
+        android:layout_below="@+id/buttonMenuArCondicionado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:text="Lixeira"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="IrParaLixeira"
+        android:id="@+id/buttonMenuLixeira"
+        android:textSize="30sp"
+        android:layout_below="@+id/buttonMenuProjetorCortina"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+</RelativeLayout>
