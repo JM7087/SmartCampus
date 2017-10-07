@@ -22,9 +22,9 @@ public class menu extends AppCompatActivity {
 
     }
 
-    public void IrParaMultimidia (View view){
-        Intent intentTelaMultimidia = new Intent(getApplicationContext(),multimidia.class);
-        startActivity(intentTelaMultimidia);
+    public void IrParaLuz (View view){
+        Intent intentTelaLuz = new Intent(getApplicationContext(),luz.class);
+        startActivity(intentTelaLuz);
         lixeira.atualizaServidorOnOff = 0;
 
     }

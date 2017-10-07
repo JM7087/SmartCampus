@@ -38,13 +38,13 @@
         android:id="@+id/buttonMenuProjetorCortina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="IrParaMultimidia"
-        android:text="Projetor/Persiana"
-        android:textSize="30sp"
-        android:layout_below="@+id/buttonMenuArCondicionado"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="45dp" />
+        android:layout_below="@+id/buttonMenuArCondicionado"
+        android:layout_marginTop="45dp"
+        android:onClick="IrParaLuz"
+        android:text="luz"
+        android:textSize="30sp" />
 
     <Button
         android:text="Lixeira"

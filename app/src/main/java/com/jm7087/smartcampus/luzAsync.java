@@ -15,13 +15,13 @@ import retrofit2.Retrofit;
  * Created by JM7087-Notbook on 25/09/2017.
  */
 
-public class multimidiaAsync extends AsyncTask<String, Void, response> {
+public class luzAsync extends AsyncTask<String, Void, response> {
     private Context context;
 
-    public multimidiaAsync.onResponseRetrofitListnner listnner;
+    public luzAsync.onResponseRetrofitListnner listnner;
 
 
-    public multimidiaAsync(Context context, multimidiaAsync.onResponseRetrofitListnner listnner) {
+    public luzAsync(Context context, luzAsync.onResponseRetrofitListnner listnner) {
         this.context = context;
         this.listnner = listnner;
     }
@@ -29,16 +29,16 @@ public class multimidiaAsync extends AsyncTask<String, Void, response> {
     @Override
     protected response doInBackground(String... params) {
 
-        return setDadosMultimidia(params[0], params[1]);
+        return setDadosLuz(params[0]);
     }
 
-    private response setDadosMultimidia(String projetor, String persiana ){
+    private response setDadosLuz(String ligadorDesligarLuz ){
         try {
             Call<response> thingsService = null;
 
-            final multimidiaService services = createServiceRetrofit();
+            final luzService services = createServiceRetrofit();
             if(services != null) {
-                thingsService = services.setDadosMultimidia(projetor, persiana);
+                thingsService = services.setDadosLuz(ligadorDesligarLuz);
                 response response = (com.jm7087.smartcampus.response) thingsService.execute().body();
 
                 return response;
@@ -49,7 +49,7 @@ public class multimidiaAsync extends AsyncTask<String, Void, response> {
             return null;
         }
     }
-    private multimidiaService createServiceRetrofit(){
+    private luzService createServiceRetrofit(){
         try {
             String baseUrl = URL.URLPATH;
 
@@ -61,7 +61,7 @@ public class multimidiaAsync extends AsyncTask<String, Void, response> {
                     .addConverterFactory(GsonConverterFactory.create(gsonConverter))
                     .build();
 
-            return retrofit.create(multimidiaService.class);
+            return retrofit.create(luzService.class);
         }catch (Exception e){
             return null;
         }

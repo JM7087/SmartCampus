@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".lixeira" />
-        <activity android:name=".multimidia" />
+        <activity android:name=".luz" />
         <activity android:name=".arCondicionado" />
         <activity android:name=".menu" />
     </application>
