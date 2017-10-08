@@ -1,5 +1,6 @@
 package com.jm7087.smartcampus;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -9,6 +10,9 @@ public class lixeira extends AppCompatActivity {
 
     TextView viewPorcentagem;
     String mostraPorcentagem;
+
+    int lixeiraFull;
+    MediaPlayer somDeLixeira;
 
     public static int atualizaServidorOnOff;
 
@@ -22,6 +26,8 @@ public class lixeira extends AppCompatActivity {
         atualizaServidorOnOff = 1;
 
         viewPorcentagem = (TextView) findViewById(R.id.textViewPorcentagem);
+
+        somDeLixeira = MediaPlayer.create(lixeira.this,R.raw.somlixeirafull);
 
     }
 
@@ -55,6 +61,11 @@ public class lixeira extends AppCompatActivity {
                mostraPorcentagem = response.response;
 
                viewPorcentagem.setText(mostraPorcentagem+"%");
+
+                lixeiraFull = Integer.parseInt(mostraPorcentagem);
+                if (lixeiraFull >= 100){
+                    somDeLixeira.start();
+                }
 
             }
         });

@@ -23,17 +23,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp" />
 
-    <Switch
-        android:id="@+id/switchLuz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="luzOnOFF"
-        android:text="OFF/ON"
-        android:textSize="30sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="38dp" />
-
     <ImageView
         android:id="@+id/imageViewLuz"
         android:layout_width="300dp"
@@ -42,5 +31,15 @@
         android:layout_centerVertical="true"
         android:cropToPadding="false"
         app:srcCompat="@drawable/luz_desligada" />
+
+    <Button
+        android:id="@+id/buttonLuzOnOff"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="luzOnOFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="On/OFF" />
 
 </RelativeLayout>

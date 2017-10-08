@@ -19,9 +19,8 @@ public class luz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_luz);
-        Toast.makeText(getApplicationContext(), "Conectado", Toast.LENGTH_SHORT).show();
 
-        somLuz = MediaPlayer.create(luz.this,R.raw.somprojetor);
+        somLuz = MediaPlayer.create(luz.this,R.raw.somonoff);
 
         imageViewLuz = (ImageView) findViewById(R.id.imageViewLuz);
 
