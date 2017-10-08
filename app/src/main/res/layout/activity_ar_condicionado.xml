@@ -83,4 +83,16 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+    <TextView
+        android:id="@+id/textVieweEgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

@@ -16,6 +16,10 @@ public class arCondicionado extends AppCompatActivity {
     int autoOnOff = 0;
     int arOnOff = 0;
 
+    int egg = 13;
+    TextView eggView;
+    String cotEgg;
+
     MediaPlayer somDePiMaisMenos;
     MediaPlayer somOnOff;
 
@@ -23,7 +27,9 @@ public class arCondicionado extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ar_condicionado);
+
         viewTempo = (TextView) findViewById(R.id.textViewTempo);
+        eggView = (TextView) findViewById(R.id.textVieweEgg);
 
         somDePiMaisMenos = MediaPlayer.create(arCondicionado.this,R.raw.somdepi);
         somOnOff = MediaPlayer.create(arCondicionado.this,R.raw.somonoff);
@@ -111,6 +117,14 @@ public class arCondicionado extends AppCompatActivity {
 
         if (arOnOff == 0){
             //continua
+            egg = egg - 1;
+            cotEgg = Integer.toString(egg);
+
+            Toast.makeText(getApplicationContext(),cotEgg, Toast.LENGTH_SHORT).show();
+            if (egg <= 1){
+                eggView.setText("WWW.JM7087.COM");
+            }
+
         }else {
 
             if (autoOnOff == 1){
@@ -123,6 +137,9 @@ public class arCondicionado extends AppCompatActivity {
 
                 viewTempo.setText(mostraTempo);
 
+                setaDadosAr(String.valueOf(arOnOff), mostraTempo.toString(), String.valueOf(autoOnOff));
+
+
             }else {
 
                 somDePiMaisMenos.start();
@@ -131,9 +148,10 @@ public class arCondicionado extends AppCompatActivity {
 
                 viewTempo.setText("AUTO");
 
+                setaDadosAr(String.valueOf(arOnOff), mostraTempo.toString(), String.valueOf(autoOnOff));
+
             }
         }
-        setaDadosAr(String.valueOf(arOnOff), mostraTempo.toString(), String.valueOf(autoOnOff));
 
     }
 
