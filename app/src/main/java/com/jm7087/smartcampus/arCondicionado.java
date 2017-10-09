@@ -19,6 +19,7 @@ public class arCondicionado extends AppCompatActivity {
     int egg = 13;
     TextView eggView;
     String cotEgg;
+    MediaPlayer somEgg;
 
     MediaPlayer somDePiMaisMenos;
     MediaPlayer somOnOff;
@@ -33,6 +34,7 @@ public class arCondicionado extends AppCompatActivity {
 
         somDePiMaisMenos = MediaPlayer.create(arCondicionado.this,R.raw.somdepi);
         somOnOff = MediaPlayer.create(arCondicionado.this,R.raw.somonoff);
+        somEgg = MediaPlayer.create(arCondicionado.this,R.raw.somprojetor);
 
     }
 
@@ -120,9 +122,12 @@ public class arCondicionado extends AppCompatActivity {
             egg = egg - 1;
             cotEgg = Integer.toString(egg);
 
-            Toast.makeText(getApplicationContext(),cotEgg, Toast.LENGTH_SHORT).show();
-            if (egg <= 1){
+            if (egg <= 3) {
+                Toast.makeText(getApplicationContext(), cotEgg, Toast.LENGTH_SHORT).show();
+            }if (egg == 1){
+                somEgg.start();
                 eggView.setText("WWW.JM7087.COM");
+                egg = 100000;
             }
 
         }else {
