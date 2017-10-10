@@ -32,6 +32,14 @@ public class menu extends AppCompatActivity {
     public void IrParaLixeira (View view){
         Intent intentTelaLixeira = new Intent(getApplicationContext(),lixeira.class);
         startActivity(intentTelaLixeira);
+        energia.atualizarServidorOnOff = 0;
+    }
+
+    public void IrParaEnergia (View view){
+        Intent intentTelaEnergia = new Intent(getApplicationContext(),energia.class);
+        startActivity(intentTelaEnergia);
+        lixeira.atualizaServidorOnOff = 0;
+
     }
 
 }

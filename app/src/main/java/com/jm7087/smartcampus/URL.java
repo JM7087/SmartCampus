@@ -5,5 +5,5 @@ package com.jm7087.smartcampus;
  */
 
 public class URL {
-    public static String URLPATH = "http://192.168.0.103:5000";
+    public static String URLPATH = "http://192.168.0.102:5000";
 }
