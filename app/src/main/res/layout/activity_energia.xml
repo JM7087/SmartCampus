@@ -20,8 +20,9 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
-            android:text="Controle de Enegia"
+            android:text="Consumo de Enegia"
             android:textAlignment="center"
+            android:textAllCaps="false"
             android:textColor="@android:color/background_dark"
             android:textSize="40sp" />
 

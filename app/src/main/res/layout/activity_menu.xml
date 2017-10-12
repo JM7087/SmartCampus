@@ -15,13 +15,14 @@
         android:id="@+id/textViewMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
         android:text="Menu"
+        android:textAlignment="center"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp"
         android:textStyle="normal|bold"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp" />
+        android:layout_centerHorizontal="true" />
     <Button
         android:text="Ar Condicionado"
         android:layout_width="match_parent"
@@ -35,16 +36,16 @@
         android:layout_marginTop="36dp" />
 
     <Button
-        android:id="@+id/buttonMenuProjetorCortina"
+        android:id="@+id/buttonMenuControleDeInluminação"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/buttonMenuArCondicionado"
         android:layout_marginTop="36dp"
-        android:text="luz"
         android:onClick="IrParaLuz"
-        android:textSize="30sp" />
+        android:text="Controle de Inluminação"
+        android:textSize="24sp" />
 
     <Button
         android:text="Lixeira"
@@ -52,7 +53,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonMenuLixeira"
         android:textSize="30sp"
-        android:layout_below="@+id/buttonMenuProjetorCortina"
+        android:layout_below="@+id/buttonMenuControleDeInluminação"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="IrParaLixeira"
@@ -65,8 +66,8 @@
         android:layout_below="@+id/buttonMenuLixeira"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:text="enegia"
         android:onClick="IrParaEnergia"
+        android:text="Consumo de Enegia"
         android:textSize="30sp" />
 
 </RelativeLayout>
