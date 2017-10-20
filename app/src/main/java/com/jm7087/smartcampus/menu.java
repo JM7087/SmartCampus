@@ -19,6 +19,7 @@ public class menu extends AppCompatActivity {
         Intent intentTelaArCondicionado = new Intent(getApplicationContext(),arCondicionado.class);
         startActivity(intentTelaArCondicionado);
         lixeira.atualizaServidorOnOff = 0;
+        energia.atualizarServidorOnOff = 0;
 
     }
 
@@ -26,6 +27,7 @@ public class menu extends AppCompatActivity {
         Intent intentTelaLuz = new Intent(getApplicationContext(),luz.class);
         startActivity(intentTelaLuz);
         lixeira.atualizaServidorOnOff = 0;
+        energia.atualizarServidorOnOff = 0;
 
     }
 

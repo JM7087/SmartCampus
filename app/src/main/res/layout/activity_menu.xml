@@ -44,7 +44,7 @@
         android:layout_below="@+id/buttonMenuArCondicionado"
         android:layout_marginTop="36dp"
         android:onClick="IrParaLuz"
-        android:text="Controle de Inluminação"
+        android:text="Controle de Iluminação"
         android:textSize="24sp" />
 
     <Button
@@ -67,7 +67,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:onClick="IrParaEnergia"
-        android:text="Consumo de Enegia"
+        android:text="Consumo de Energia"
         android:textSize="30sp" />
 
 </RelativeLayout>

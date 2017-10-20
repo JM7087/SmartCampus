@@ -97,9 +97,9 @@ public class arCondicionado extends AppCompatActivity {
 
             arOnOff = 0;
 
-            mostraTempo = "- -";
+            mostraTempo = Integer.toString(valorTempo);
 
-            viewTempo.setText(mostraTempo);
+            viewTempo.setText("- -");
 
         }else {
             valorTempo = 23;
