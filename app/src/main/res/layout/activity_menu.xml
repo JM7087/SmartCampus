@@ -45,7 +45,7 @@
         android:layout_marginTop="36dp"
         android:onClick="IrParaLuz"
         android:text="Controle de Iluminação"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <Button
         android:text="Lixeira"
@@ -63,11 +63,12 @@
         android:id="@+id/buttonMenuEnegia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonMenuLixeira"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
         android:onClick="IrParaEnergia"
         android:text="Consumo de Energia"
-        android:textSize="30sp" />
+        android:textSize="24sp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/buttonMenuLixeira"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

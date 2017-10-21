@@ -7,54 +7,53 @@
     tools:context="com.jm7087.smartcampus.splashScreen">
 
     <RelativeLayout
-        android:layout_width="395dp"
-        android:layout_height="587dp"
+        android:layout_width="344dp"
+        android:layout_height="495dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="47dp">
+        tools:layout_editor_absoluteY="8dp">
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:text="Smart Campus"
+            android:textAlignment="center"
             android:textColor="@android:color/background_dark"
-            android:textSize="50sp"
+            android:textSize="45sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="33dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            tools:layout_editor_absoluteY="33dp" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
             android:text="Carregando"
             android:textAlignment="center"
             android:textColor="@android:color/background_dark"
             android:textSize="50sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="495dp"
-            android:layout_marginTop="19dp"
-            android:layout_below="@+id/imageView"
-            android:layout_centerHorizontal="true" />
+            tools:layout_editor_absoluteY="495dp" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="337dp"
-            android:layout_height="338dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView4"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="41dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="14dp"
             app:srcCompat="@mipmap/ic_launcher"
             tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="132dp" />
+            tools:layout_editor_absoluteY="132dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

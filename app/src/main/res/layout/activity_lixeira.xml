@@ -16,10 +16,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         app:srcCompat="@drawable/lixeira_imagem"
-        android:layout_marginTop="27dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_below="@+id/textView"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
