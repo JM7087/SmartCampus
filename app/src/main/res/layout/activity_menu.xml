@@ -15,7 +15,6 @@
         android:id="@+id/textViewMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
         android:text="Menu"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
@@ -39,25 +38,25 @@
         android:id="@+id/buttonMenuControleDeInluminação"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/buttonMenuArCondicionado"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="21dp"
         android:onClick="IrParaLuz"
         android:text="Controle de Iluminação"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:layout_below="@+id/buttonMenuArCondicionado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Lixeira"
+        android:id="@+id/buttonMenuLixeira"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonMenuLixeira"
-        android:textSize="30sp"
-        android:layout_below="@+id/buttonMenuControleDeInluminação"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonMenuControleDeInluminação"
+        android:layout_marginTop="26dp"
         android:onClick="IrParaLixeira"
-        android:layout_marginTop="36dp" />
+        android:text="Lixeira"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/buttonMenuEnegia"
@@ -66,9 +65,19 @@
         android:onClick="IrParaEnergia"
         android:text="Consumo de Energia"
         android:textSize="24sp"
+        android:layout_marginTop="19dp"
         android:layout_below="@+id/buttonMenuLixeira"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:onClick="IrParaIp"
+        android:text="Configurar IP do Servidor"
+        android:layout_below="@+id/buttonMenuEnegia"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

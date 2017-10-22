@@ -25,7 +25,8 @@
         <activity android:name=".luz" />
         <activity android:name=".arCondicionado" />
         <activity android:name=".menu" />
-        <activity android:name=".energia"></activity>
+        <activity android:name=".energia" />
+        <activity android:name=".ip"></activity>
     </application>
 
 </manifest>

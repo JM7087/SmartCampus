@@ -44,4 +44,12 @@ public class menu extends AppCompatActivity {
 
     }
 
+    public void IrParaIp (View view){
+        Intent intentTelaIp = new Intent(getApplicationContext(),ip.class);
+        startActivity(intentTelaIp);
+        lixeira.atualizaServidorOnOff = 0;
+        energia.atualizarServidorOnOff = 0;
+
+    }
+
 }

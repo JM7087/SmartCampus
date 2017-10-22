@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jm7087.smartcampus.ip">
+
+    <RelativeLayout
+        android:layout_width="354dp"
+        android:layout_height="486dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textViewIpAtual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonIp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:text="Sem IP "
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="387dp" />
+
+        <Button
+            android:id="@+id/buttonIp"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:onClick="ipDoServidor"
+            android:text="OK"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="231dp"
+            android:layout_below="@+id/editTextIp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="43dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP do Servidor"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="38dp"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editTextIp"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="Nomero de IP do Servidor"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="107dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
