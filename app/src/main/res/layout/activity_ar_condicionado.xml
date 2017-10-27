@@ -18,6 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:text="Ar Condicionado"
+        android:textAllCaps="true"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="normal|bold" />

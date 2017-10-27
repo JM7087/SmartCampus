@@ -31,8 +31,8 @@ public class ip extends AppCompatActivity {
     public void ipDoServidor (View view){
         ip = "http://"+ipDigitado.getText().toString()+":7087";
         URL.URLPATH = ip;
-        Toast.makeText(getApplicationContext(),"O seu IP é: "+ URL.URLPATH, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"O IP do servidor é: "+ URL.URLPATH, Toast.LENGTH_SHORT).show();
 
-        ipAtual.setText("O seu IP é: "+ URL.URLPATH);
+        ipAtual.setText("O IP do Servidor é: "+ URL.URLPATH);
     }
 }

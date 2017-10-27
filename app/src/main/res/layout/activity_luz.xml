@@ -18,10 +18,11 @@
         android:layout_above="@+id/imageViewLuz"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp"
-        android:text="Controle de Inluminação"
+        android:text="Controle de Iluminação"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="@android:color/background_dark"
-        android:textSize="28sp"
+        android:textSize="25sp"
         android:textStyle="normal|bold" />
 
     <ImageView
